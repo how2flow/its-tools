@@ -6,6 +6,9 @@
 #ifndef _ITS_TOOLS_H
 #define _ITS_TOOLS_H
 
+/* its tools mode id */
+#define TRANSLATE 1
+
 /* its command id */
 #define INT 1
 #define INV 2
@@ -24,5 +27,8 @@ void set_its_reg(uint64_t addr, uint64_t val);
 /* its-tools process init */
 uint8_t select_its_tools_cmd_type(void);
 uint8_t select_its_tools_mode(void);
+
+/* its-tools using its cmd */
+void translate_its_cmd(uint8_t *cmd);
 
 #endif /* _ITS_TOOLS_H */

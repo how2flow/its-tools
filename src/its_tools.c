@@ -99,6 +99,7 @@ uint8_t select_its_tools_mode(void)
 	int ret;
 
 	printf("Select Mode\n");
+	printf("[%d] TRANSLATE\n",TRANSLATE);
 	if (scanf("%hhd", &mode) != 1) {
 		printf("Invalid arguments\n");
 		exit(EXIT_FAILURE);

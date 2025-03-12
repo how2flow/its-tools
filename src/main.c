@@ -25,6 +25,10 @@ int main(void)
 	cmd_type = select_its_tools_cmd_type();
 
 	switch (mode) {
+	case TRANSLATE:
+		cmd = convert_its_cmd[cmd_type]();
+		translate_its_cmd(cmd);
+		break;
 	default:
 		printf("Invalid Mode\n");
 		break;
