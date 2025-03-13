@@ -29,6 +29,10 @@ int main(void)
 		cmd = convert_its_cmd[cmd_type]();
 		translate_its_cmd(cmd);
 		break;
+	case EMULATE:
+		cmd = convert_its_cmd[cmd_type]();
+		emulate_its_cmd(cmd);
+		break;
 	default:
 		printf("Invalid Mode\n");
 		break;

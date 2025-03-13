@@ -8,6 +8,7 @@
 
 /* its tools mode id */
 #define TRANSLATE 1
+#define EMULATE 2
 
 /* its command id */
 #define INT 1
@@ -30,5 +31,6 @@ uint8_t select_its_tools_mode(void);
 
 /* its-tools using its cmd */
 void translate_its_cmd(uint8_t *cmd);
+void emulate_its_cmd(uint8_t *cmd);
 
 #endif /* _ITS_TOOLS_H */

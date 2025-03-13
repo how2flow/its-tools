@@ -100,6 +100,7 @@ uint8_t select_its_tools_mode(void)
 
 	printf("Select Mode\n");
 	printf("[%d] TRANSLATE\n",TRANSLATE);
+	printf("[%d] EMULATE\n",EMULATE);
 	if (scanf("%hhd", &mode) != 1) {
 		printf("Invalid arguments\n");
 		exit(EXIT_FAILURE);
